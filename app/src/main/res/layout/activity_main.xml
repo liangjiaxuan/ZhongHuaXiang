@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rongwei.zhonghuaxiang.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/rl_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_main">
+    </FrameLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        >
+        <RadioButton
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="小惊喜"
+            android:textColor="@color/surprice_bg"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/smallsurprise_bg"
+            android:id="@+id/radioButton1" />
+        <RadioButton
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="小收藏"
+            android:textColor="@color/surprice_bg"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/collection_bg"
+            android:id="@+id/radioButton2" />
+        <RadioButton
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="小可爱"
+            android:textColor="@color/surprice_bg"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/smallcute_bg"
+            android:id="@+id/radioButton3" />
+    </RadioGroup>
+
+</RelativeLayout>
